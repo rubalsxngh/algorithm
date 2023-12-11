@@ -1,4 +1,5 @@
 from create_tree import tree
+import collections
 
 
 def pre_order(root, li):
@@ -28,6 +29,26 @@ def in_order(root, li):
         in_order(root.right, li)
 
 
+def level_order(root, level_list):
+    if root is None:
+        return None
+
+    q = collections.deque()
+    q.append(root)
+
+    while q:
+        node1 = q.popleft()
+        level_list.append(node1.val)
+
+        if node1.left is not None:
+            q.append(node1.left)
+
+        if node1.right is not None:
+            q.append(node1.right)
+
+    return level_list
+
+
 def main():
     root = tree('1 4 N 4 2 ')
 
@@ -42,6 +63,10 @@ def main():
     in_list = []
     in_order(root, in_list)
     print("the in-order traversel is as follows", in_list)
+
+    level_list = []
+    level_list = level_order(root, level_list)
+    print("the level-order traversel is as follows", level_list)
 
 
 if __name__ == "__main__":

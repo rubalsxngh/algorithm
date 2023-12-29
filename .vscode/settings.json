@@ -1,5 +1,8 @@
 {
     "python.analysis.extraPaths": [
         "./data_structs/trees"
-    ]
+    ],
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }

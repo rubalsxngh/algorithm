@@ -1,10 +1,10 @@
-# algorithms-python
+# algorithms
 
-Welcome to the repository! This repository contains implementations of various algorithms in Python.
+Welcome to the repository! This repository contains implementations of various algorithms in Python and C++.
 
 ## Installation
 
-To get started with the code in this repository, follow these steps:
+For ```python``` To get started with the code in this repository, follow these steps:
 
 - Fork this repository.
 
@@ -13,6 +13,11 @@ To get started with the code in this repository, follow these steps:
    ```bash
    git clone https://github.com/your-username/algorithms.git
    cd algorithms
+
+- Navigate to project folder:
+
+  ```bash
+  cd python 
 
 - Install the necessary libraries and modules.
 

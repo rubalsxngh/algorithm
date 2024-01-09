@@ -29,6 +29,12 @@ For ```python``` To get started with the code in this repository, follow these s
   ```bash
   python path/to/your/script.py
 
+- Run the tests.
+
+  ```bash
+  cd python
+  python -m pytest test
+
 ## Contribution
 
 Contributions to this repository are highly welcome! If you have new algorithms, improvements, or bug fixes, please follow these steps:
